@@ -10,13 +10,17 @@ This repository provides a robustness evaluation on *Face Recognition* by using 
 * [Our paper](arxiv) also provides some valuable insights for the design of more robust models in facial tasks, as well as in other metric learning tasks such as image retrieval, person re-identification, *etc*.
 
 
-### Installation
-
+### Requirements
 * Python 3
+* torch==1.4.0
+* torchvision==0.2.2 
+* tensorflow-gpu==1.13.1
 
+### Installation
 * pip install -r requirements.txt
 
 ### Data Preparation
+We support the following datasets (continuously updating): [LFW](https://hal.inria.fr/file/index/docid/321923/filename/Huang_long_eccv2008-lfw.pdf), [YTF](http://www.cs.tau.ac.il/~wolf/ytfaces/WolfHassnerMaoz_CVPR11.pdf), [CFP-FP](http://www.cfpw.io/paper.pdf).
 
 #### LFW
 
@@ -72,7 +76,7 @@ data
 ```
 
 ### White-Box Evaluation
-Some examples are in `run_white.sh`, such as:
+`run_white.sh` provides some command line interfaces to run white-box evaluation. For example, run FGSM evaluation on MobileFace for LFW dataset using <img src="http://latex.codecogs.com/gif.latex?\ell_{2}" /> distance as:
 
 ```
 python benchmark/lfw/FGSM_white.py --distance=l2 --goal=dodging --model=MobileFace --eps=16 --log=log-lfw-FGSM-l2-dodging-MobileFace-white.txt 
@@ -89,7 +93,7 @@ adv_img,tar_img,score,dist,success
 ....
 ```
 
-`score` indicates the similarity predicted by victim model,  `dist` means <img src="http://latex.codecogs.com/gif.latex?\ell_{2}" /> or <img src="http://latex.codecogs.com/gif.latex?\ell_{\infty}" /> distance, and `success` means whether this attack is successful.
+`score` indicates the similarity predicted by victim model,  `dist` means the minimal adversarial <img src="http://latex.codecogs.com/gif.latex?\ell_{2}" /> or <img src="http://latex.codecogs.com/gif.latex?\ell_{\infty}" /> distortion distance, and `success` means whether this attack is successful.
 
 #### White-Box Results
 
@@ -108,7 +112,7 @@ adv_img,tar_img,score,dist,success
 
 ### Black-Box Evaluation
 
-Some examples are in `run_black.sh`
+`run_black.sh` provides some command line interfaces to run white-box evaluation.
 
 ```
 # generate adversarial examples
@@ -137,11 +141,12 @@ Then `run_test.py` will generate the evaluation log file in `--log`, and the for
 </p>
 
 
-## Acknowledge
-For the training procedure of Face Recognition, we mainly refer to the public code from [face.evoLVe.PyTorch](https://github.com/ZhaoJ9014/face.evoLVe.PyTorch).
-
+## Acknowledgements
+- For the training procedure of *Face Recognition*, we mainly refer to the public code from [face.evoLVe.PyTorch](https://github.com/ZhaoJ9014/face.evoLVe.PyTorch).
+- To benchmark adversarial robustness on *image classification*, we recommend [RealSafe](https://github.com/thu-ml/realsafe), a Python library for adversarial machine learning research. 
 
 ## Citation
+If you benefit from our work in your research, please consider to cite the following paper:
 
     @article{xiao2020delving,
         title   =   {Delving into the Adversarial Robustness on Face Recognition},
