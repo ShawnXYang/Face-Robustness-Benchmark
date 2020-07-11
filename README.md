@@ -147,6 +147,7 @@ Then `run_test.py` will generate the evaluation log file in `--log`, and the for
 
 ## Citation
 If you benefit from our work in your research, please consider to cite the following paper:
+
     @article{yang2020delving,
         title={Delving into the Adversarial Robustness on Face Recognition},
         author={Yang, Xiao and Yang, Dingcheng and Dong, Yinpeng and Yu, Wenjian and Su, Hang and Zhu, Jun},
