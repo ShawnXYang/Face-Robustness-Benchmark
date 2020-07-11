@@ -1,13 +1,13 @@
 ## Face Robustness Benchmark
 
-This repository provides a robustness evaluation on *Face Recognition* by using various adversarial attacks. These evaluations are conducted under diverse adversarial settings, incuding doding and impersonation attacks, <img src="http://latex.codecogs.com/gif.latex?\ell_{2}" /> and <img src="http://latex.codecogs.com/gif.latex?\ell_{\infty}" /> attacks, white-box and black-box attacks. More details and some findings can be reffered to our paper [DELVING INTO THE ADVERSARIAL ROBUSTNESS ON FACE RECOGNITION](https://arxiv).
+This repository provides a robustness evaluation on *Face Recognition* by using various adversarial attacks. These evaluations are conducted under diverse adversarial settings, incuding doding and impersonation attacks, <img src="http://latex.codecogs.com/gif.latex?\ell_{2}" /> and <img src="http://latex.codecogs.com/gif.latex?\ell_{\infty}" /> attacks, white-box and black-box attacks. More details and some findings can be reffered to our paper [DELVING INTO THE ADVERSARIAL ROBUSTNESS ON FACE RECOGNITION](https://arxiv.org/pdf/2007.04118.pdf).
 
 ## Introduction
 
 * This repository studies various backbones (*e.g.*, [ResNet](https://arxiv.org/pdf/1512.03385.pdf), [IR](https://arxiv.org/pdf/1512.03385.pdf), [MobileNet](https://arxiv.org/pdf/1704.04861.pdf), [ShuffleNet](https://arxiv.org/pdf/1707.01083.pdf), *etc.*) and various losses (*e.g.*, Softmax,  [SphereFace](https://arxiv.org/pdf/1704.08063.pdf), [CosFace](https://arxiv.org/pdf/1801.09414.pdf), [ArcFace](https://arxiv.org/pdf/1801.07698.pdf), *etc.*). Some trained models and source codes are provided.
 * This repository introduces various white-box attacks including FGSM, BIM, MIM, CW, CIM and LGC, and black-box attack methods including Evolutionary, *etc.* The attack scripts are in `benchmark/`. 
 * This repository aims to help researchers understand the adversarial robustness and provide a reliable evaluate criteria for robustness of the future works on face recognition.
-* [Our paper](arxiv) also provides some valuable insights for the design of more robust models in facial tasks, as well as in other metric learning tasks such as image retrieval, person re-identification, *etc*.
+* [Our paper](https://arxiv.org/pdf/2007.04118.pdf) also provides some valuable insights for the design of more robust models in facial tasks, as well as in other metric learning tasks such as image retrieval, person re-identification, *etc*.
 
 
 ### Requirements
@@ -147,10 +147,9 @@ Then `run_test.py` will generate the evaluation log file in `--log`, and the for
 
 ## Citation
 If you benefit from our work in your research, please consider to cite the following paper:
-
-    @article{xiao2020delving,
-        title   =   {Delving into the Adversarial Robustness on Face Recognition},
-        author  =   {Xiao},
-        journal =   {arXiv preprint arXiv:2007.XXXXX},
-        year    =   {2020}
+    @article{yang2020delving,
+        title={Delving into the Adversarial Robustness on Face Recognition},
+        author={Yang, Xiao and Yang, Dingcheng and Dong, Yinpeng and Yu, Wenjian and Su, Hang and Zhu, Jun},
+        journal={arXiv preprint arXiv:2007.04118},
+        year={2020}
     }
