@@ -2,6 +2,10 @@
 
 This repository provides a robustness evaluation on *Face Recognition* by using various adversarial attacks. These evaluations are conducted under diverse adversarial settings, incuding doding and impersonation attacks, <img src="http://latex.codecogs.com/gif.latex?\ell_{2}" /> and <img src="http://latex.codecogs.com/gif.latex?\ell_{\infty}" /> attacks, white-box and black-box attacks. More details and some findings can be reffered to the manuscript.
 
+<p align="center">
+  <img src="imgs/notation.png" alt="bounding box" width="640px">
+</p>
+
 ## Introduction
 
 * This repository studies various backbones (*e.g.*, [ResNet](https://arxiv.org/pdf/1512.03385.pdf), [IR](https://arxiv.org/pdf/1512.03385.pdf), [MobileNet](https://arxiv.org/pdf/1704.04861.pdf), [ShuffleNet](https://arxiv.org/pdf/1707.01083.pdf), *etc.*) and various losses (*e.g.*, Softmax,  [SphereFace](https://arxiv.org/pdf/1704.08063.pdf), [CosFace](https://arxiv.org/pdf/1801.09414.pdf), [ArcFace](https://arxiv.org/pdf/1801.07698.pdf), *etc.*). Some trained models and source codes are provided.
