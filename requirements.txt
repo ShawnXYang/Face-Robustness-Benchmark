@@ -1,6 +1,5 @@
-torchvision==0.2.2.post3 
-torch==1.4.0
-tensorflow-gpu==1.13.1
+torchvision>=0.2.2
+torch>=1.4.0
 matplotlib==2.2.4
 sklearn
 scipy==1.0.1
