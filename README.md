@@ -6,6 +6,19 @@ This repository provides a robustness evaluation on *Face Recognition* by using 
   <img src="imgs/notation.png" alt="bounding box" width="640px">
 </p>
 
+****
+## Contents
+* [Introduction](#Introduction)
+* [Installation](#Installation)
+* [Documentation](#Documentation)
+* [Data Preparation](#Data-Preparation)
+* [White-Box Benchmark](#White-Box-Benchmark)
+* [Black-Box Benchmark](#Black-Box-Benchmark)
+* [Black-Box API Benchmark](#Black-Box-API-Benchmark)
+* [Acknowledgements](#Acknowledgements)
+* [Citation](#Citation)
+****
+
 ## Introduction
 
 * This repository studies various backbones (*e.g.*, [ResNet](https://arxiv.org/pdf/1512.03385.pdf), [IR](https://arxiv.org/pdf/1512.03385.pdf), [MobileNet](https://arxiv.org/pdf/1704.04861.pdf), [ShuffleNet](https://arxiv.org/pdf/1707.01083.pdf), *etc.*) and various losses (*e.g.*, Softmax,  [SphereFace](https://arxiv.org/pdf/1704.08063.pdf), [CosFace](https://arxiv.org/pdf/1801.09414.pdf), [ArcFace](https://arxiv.org/pdf/1801.07698.pdf), *etc.*). Some trained models and source codes are provided.
@@ -95,7 +108,7 @@ data
 ```
 </details>
 
-## White-Box Evaluation
+## White-Box Benchmark
 
 
 - The median distance of the minimum perturbations against dodging and impersonation attacks under the <img src="http://latex.codecogs.com/gif.latex?\ell_{2}" /> and <img src="http://latex.codecogs.com/gif.latex?\ell_{\infty}" /> norms.
@@ -157,7 +170,7 @@ adv_img,tar_img,score,dist,success
 
 
 
-## Black-Box Evaluation
+## Black-Box Benchmark
 
 - The attack success rates of the models against black-box dodging attacks under the <img src="http://latex.codecogs.com/gif.latex?\ell_{\infty}" /> norm.
 
@@ -170,7 +183,6 @@ adv_img,tar_img,score,dist,success
 <p align="center">
   <img src="imgs/heatmap_linf_impersonate_lfw.png" alt="bounding box" width="640px">
 </p>
-
 
 ### Running commands
 `run_black.sh` provides some command line interfaces to run white-box evaluation.
@@ -187,6 +199,11 @@ After executing the first script, the adversarial examples are saved as png file
 
 Then `run_test.py` will generate the evaluation log file in `--log`, and the format of the log file is same as log file of **White-Box Evaluation**.
 
+## Black-Box API Benchmark
+
+<p align="center">
+  <img src="imgs/api.png" alt="bounding box" width="800px">
+</p>
 
 
 ## Acknowledgements
