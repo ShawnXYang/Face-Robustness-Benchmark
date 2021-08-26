@@ -32,7 +32,7 @@ This repository provides a robustness evaluation on *Face Recognition* by using 
 We provide __API docs__ at https://face-robustness-benchmark.readthedocs.io/.
 
 ## Data Preparation
-We build our work on previously released data, and support the following datasets (continuously updating): [LFW](https://hal.inria.fr/file/index/docid/321923/filename/Huang_long_eccv2008-lfw.pdf), [YTF](http://www.cs.tau.ac.il/~wolf/ytfaces/WolfHassnerMaoz_CVPR11.pdf), [CFP-FP](http://www.cfpw.io/paper.pdf).
+We build our work on previously released data, and support the following datasets (continuously updating): [LFW](https://hal.inria.fr/file/index/docid/321923/filename/Huang_long_eccv2008-lfw.pdf), [YTF](http://www.cs.tau.ac.il/~wolf/ytfaces/WolfHassnerMaoz_CVPR11.pdf), [CFP-FP](http://www.cfpw.io/paper.pdf), [MegaFace](http://megaface.cs.washington.edu/).
 
 <details>
   <summary><mark><font color=darkred> LFW </font></mark></summary>
