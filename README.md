@@ -31,10 +31,6 @@ This repository provides a robustness evaluation on *Face Recognition* by using 
   <img src="imgs/framework.png" alt="bounding box" width="900px">
 </p>
 
-## Requirements
-* torch>=1.4.0
-* torchvision>=0.2.2 
-
 ## Installation
 * git clone https://github.com/ShawnXYang/Face-Robustness-Benchmark
 * pip install -e .
