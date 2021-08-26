@@ -5,7 +5,9 @@ Welcome to RobFR's documentation!
    :maxdepth: 1
    :caption: Tutorials
 
+   tutorial/model
    tutorial/benchmark
+   tutorial/attack
 
 .. toctree::
    :maxdepth: 1
