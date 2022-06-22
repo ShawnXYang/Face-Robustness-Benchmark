@@ -8,5 +8,5 @@ opencv-python==4.1.0.25
 easydict
 tensorlayer==1.7
 progressbar==2.5
-numpy==1.15.1
+numpy==1.22.0
 tqdm
