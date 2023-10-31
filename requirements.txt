@@ -4,7 +4,7 @@ matplotlib==2.2.4
 sklearn
 scipy==1.0.1
 scikit-image==0.14.2
-opencv-python==4.1.0.25
+opencv-python==4.2.0.32
 easydict
 tensorlayer==1.7
 progressbar==2.5
